@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/halo', function () {
     return "Halo ini project Laravel saya!";
 });
+
+use App\Http\Controllers\BarangController;
+
+Route::resource('barang', BarangController::class);
